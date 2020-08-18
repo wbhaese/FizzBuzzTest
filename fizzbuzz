@@ -1,0 +1,25 @@
+<?php
+
+
+/*
+ * Complete the 'fizzBuzz' function below.
+ *
+ * The function accepts INTEGER n as parameter.
+ */
+
+function fizzBuzz($v) {
+    // Write your code here
+    for($n = 1; $n <= $v; $n++){
+        if($n%3==0 and $n%5==0){
+            echo 'FizzBuzz'.PHP_EOL;
+        }else if($n%3==0 and $n%5!=0){
+            echo 'Fizz'.PHP_EOL;
+        }else if($n%3!=0 and $n%5==0){
+            echo 'Buzz'.PHP_EOL;
+        }else{
+            echo $n.PHP_EOL;
+        }
+    }
+}
+
+$v = intval(trim(fgets(STDIN)));
